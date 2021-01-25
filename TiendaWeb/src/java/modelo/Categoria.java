@@ -9,8 +9,8 @@ package modelo;
  *
  * @author Carlos Andres
  */
-public class CategoriaProducto {
+public class Categoria {
     
     private int idCategoriaProducto;
-    
+    private String nombre;    
 }

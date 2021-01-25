@@ -12,17 +12,17 @@ package modelo;
 public class Producto {
     
     private int idProducto;
-    private String nombreProducto;
+    private String nombre;
     private String marca;
-    private String categoria;
+    private Categoria categoria;
     private float precio;
 
     public Producto(){
         
     }
     
-    public Producto(String nombreProducto, String marca, float precio) {
-        this.nombreProducto = nombreProducto;
+    public Producto(String nombre, String marca, float precio, Categoria categoria) {
+        this.nombre = nombre;
         this.marca = marca;
         this.categoria = categoria;
         this.precio = precio;
@@ -30,7 +30,7 @@ public class Producto {
     
     public Producto(int idProducto, String nombreProducto, String marca, float precio) {
         this.idProducto = idProducto;
-        this.nombreProducto = nombreProducto;
+        this.nombre = nombreProducto;
         this.marca = marca;
         this.categoria = categoria;
         this.precio = precio;
@@ -47,11 +47,11 @@ public class Producto {
    
 
     public String getNombreProducto() {
-        return nombreProducto;
+        return nombre;
     }
 
     public void setNombreProducto(String nombreProducto) {
-        this.nombreProducto = nombreProducto;
+        this.nombre = nombreProducto;
     }
 
     public String getMarca() {
@@ -62,11 +62,11 @@ public class Producto {
         this.marca = marca;
     }
 
-    public String getCategoria() {
+    public Categoria getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
 

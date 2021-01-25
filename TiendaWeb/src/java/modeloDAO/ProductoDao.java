@@ -5,7 +5,7 @@
  */
 package modeloDAO;
 
-import controlador.Conexion;
+import conexion_config.Conexion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -35,7 +35,7 @@ public class ProductoDao {
         instruccion = null;
         conjuntoResultados = null;
         conexion = new Conexion();
-        conexion_actual = conexion.Conectar();
+        conexion_actual = conexion.conectar();
     }   
     
     public ArrayList<Producto> listarProductos(){

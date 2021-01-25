@@ -12,13 +12,15 @@ package modelo;
 public class Cliente {
     
     private int idCliente;
-    
-    
     private String nombre;
     private String cedula;
     private String telefono;
 
-    public Cliente(String nombreCliente, String cedulaCliente, String telefono) {
+    public Cliente() {
+    }
+
+    
+    public Cliente(String nombreCliente, String cedulaCliente, String telefono){
         this.nombre = nombreCliente;
         this.cedula = cedulaCliente;
         this.telefono = telefono;
@@ -36,11 +38,11 @@ public class Cliente {
         return nombre;
     }
 
-    public void setNombreCliente(String nombreCliente) {
+    public void setNombre(String nombreCliente) {
         this.nombre = nombreCliente;
     }
 
-    public String getCedulaCliente() {
+    public String getCedula() {
         return cedula;
     }
 
